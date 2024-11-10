@@ -1,0 +1,53 @@
+<!--
+    Name: Mbuyelo Muremela
+    Qualification: Bachelor of science, Informatics
+    Email: mbuyelomuremela05@gmail.com
+    Number: +27721816840
+    Date Modified: 08/11/2024
+-->
+
+{% extends 'navigations.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title>Login</title>
+{% endblock %}
+
+{% block aditionalfiles %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block heading %}
+    <h1>Login</h1>
+{% endblock %}
+
+{% block navigation %}
+    <li>
+        <a href="{% url 'home' %}">Home</a>
+    </li>
+    <li>
+        <a href="{% url 'register' %}">Register</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <form enctype="" action="" method="" id="login-form" >
+            <h1>Login</h1>
+            <p>Don't have an account? <a href="../register">register here</a></p>
+            <div class="group-control">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                <p class="error" id="error-email">error messages</p>
+            </div>
+            <div class="group-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <p class="error" id="error-password">error messages</p>
+            </div>
+            <button id="login-btn" type="submit">Login</button>
+        </form>
+    </div>
+    <script src="{% static 'js/login.js' %}"></script>
+{% endblock %}

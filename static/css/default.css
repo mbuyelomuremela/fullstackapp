@@ -1,0 +1,77 @@
+
+/*
+    Name: Mbuyelo Muremela
+    Qualification: Bachelor of science, Informatics
+    Email: mbuyelomuremela05@gmail.com
+    Number: +27721816840
+    Date Modified: 08/11/2024
+*/
+
+.container{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(37, 40, 43);
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 3px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-arrow{
+    position: absolute;
+    left: 0;
+}
+
+.right-arrow{
+    position: absolute;
+    right: 0;
+}
+
+.left-arrow , .right-arrow{
+    width: 30px;
+    height: 90px;
+    background-color: rgb(76, 79, 81);
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 60px;
+}
+
+#left-figure , #right-figure{
+    width: 25%;
+    height: 190px;
+    margin-top: 40px;
+    z-index: 15;
+}
+
+#left-figure{
+    left: 8.5;
+    margin-left: 8.5;
+    margin-right: 0;
+}
+
+#right-figure{
+    right: 8.5;
+    margin-right: 8.5;
+    margin-left: 0;
+}
+
+#center-figure{
+    width: 75%;
+    height: 215px;
+    margin-top: 28px;
+    z-index: 20;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#center-figure:hover{
+    transform: scale(1.2);
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

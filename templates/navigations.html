@@ -1,0 +1,52 @@
+<!--
+    Name: Mbuyelo Muremela
+    Qualification: Bachelor of science, Informatics
+    Email: mbuyelomuremela05@gmail.com
+    Number: +27721816840
+    Date Modified: 08/11/2024
+-->
+
+
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block title %}
+        <title></title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/navigations.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.jpg' %}" type="image/x-icon">
+    
+    {% block aditionalfiles %}
+        
+    {% endblock %}
+
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/logo.jpg' %}" alt="logo image">
+        {% block heading %}
+            <h1></h1>
+        {% endblock %}
+        <ul>
+            {% block navigation %}
+                <li>
+                    <a href="{% url 'register' %}">Register</a>
+                </li>
+                <li>
+                    <a href="{% url 'login' %}">Login</a>
+                </li>
+            {% endblock %}
+        </ul>
+    </header>
+    {% block content %}
+        <p>main content</p>
+    {% endblock %}
+</body>
+</html>

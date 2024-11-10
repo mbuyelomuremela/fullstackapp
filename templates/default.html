@@ -1,0 +1,44 @@
+<!--
+    Name: Mbuyelo Muremela
+    Qualification: Bachelor of science, Informatics
+    Email: mbuyelomuremela05@gmail.com
+    Number: +27721816840
+    Date Modified: 08/11/2024
+-->
+
+{% extends 'navigations.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title>Image Gallery</title>
+{% endblock %}
+
+{% block aditionalfiles %}
+        <link rel="stylesheet" href="{% static 'css/default.css' %}">
+{% endblock %}
+
+{% block heading %}
+    <h1>Image Gallery</h1>
+{% endblock %}
+    
+{% block content %}
+    <div class="container">
+        <div class="left-arrow">
+            <p title="advance images to left" id="left-arrow">&lt;</p>
+        </div>
+        <figure id="left-figure">
+            <img src="{% static 'images/city.jpg' %}" alt="Left figure image" title="city" id="left-image">
+        </figure>
+        <figure id="center-figure">
+            <img src="{% static 'images/greenleaf.jpg' %}" alt="Center figure image" title="green leaf" id="center-image">
+        </figure>
+        <figure id="right-figure">
+            <img src="{% static 'images/lake.jpg' %}" alt="Right figure image" title="lake" id="right-image">
+        </figure>
+        <div class="right-arrow">
+            <p title="advance images to right" id="right-arrow">&gt;</p>
+        </div> 
+    </div>
+    <script src="{% static 'js/default.js' %}" defer></script>
+{% endblock %}

@@ -1,0 +1,79 @@
+/*
+    Name: Mbuyelo Muremela
+    Qualification: Bachelor of science, Informatics
+    Email: mbuyelomuremela05@gmail.com
+    Number: +27721816840
+    Date Modified: 08/11/2024
+*/
+
+body{
+    background-image: url('/images/lake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 3px;
+    margin: 0;
+    height: 100vh;
+    opacity: 0.7;
+}
+
+.container{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    margin-top: 3px;
+    width: 60%;
+    background-color: rgb(225, 232, 239);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.group-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+}
+
+.group-control .error{
+    margin-top: 2px;
+    margin-bottom: 7px;
+    font-size: 11;
+    font-style: italic;
+    color: rgb(199, 78, 84);
+    display: none;
+}
+
+#reg-btn , #login-btn{
+    background-color: rgb(68, 157, 235);
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    border-style: none;
+    margin-top: 6px;
+}
+
+.container h1,p{
+    text-align: center;
+}
+
+.container h1{
+    color: rgb(58, 87, 76);
+}
+
+.container p a{
+    font-size: medium;
+    text-decoration: none;
+    color: rgb(53, 142, 221);
+}
+
+.group-control input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:1px solid rgb(37, 56, 76);
+    border-radius: 4px;
+    background-color: inherit;
+}
